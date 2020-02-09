@@ -1,0 +1,153 @@
+body {
+  background: #ffffff;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+
+body,
+form,
+div,
+p,
+a,
+img,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+table,
+table tr,
+table td {
+  border: none;
+  color: #000000;
+  font-family: Arial;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+input,
+textarea,
+select {
+  outline: none;
+  font-family: Arial;
+  font-size: 12px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: underline;
+  outline: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-size: 20px;
+  padding: 0 0 10px 0;
+  color: #545454;
+}
+
+.social-block {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+}
+
+.social-block__btn {
+  position: relative;
+  display: inline-block;
+  width: 85px;
+  height: 85px;
+  margin: 15px;
+  background: #ecf0f1;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 5px 15px -5px #00000075;
+          box-shadow: 0 5px 15px -5px #00000075;
+  color: #2980b9;
+  overflow: hidden;
+}
+
+.social-block__btn:hover .social-block__icon {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  color: #ecf0f1;
+}
+
+.social-block__btn:focus {
+  -webkit-box-shadow: 0 10px 10px -5px #2980b985;
+          box-shadow: 0 10px 10px -5px #2980b985;
+}
+
+.social-block__btn:before {
+  content: '';
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: #2980b9;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+}
+
+.social-block__btn:hover::before {
+  -webkit-animation: vis 0.7s 1;
+          animation: vis 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
+
+.social-block__icon {
+  line-height: 85px;
+  font-size: 24px;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+@-webkit-keyframes vis {
+  0% {
+    top: 90%;
+    left: -110%;
+  }
+  50% {
+    top: -30%;
+    left: 10%;
+  }
+  100% {
+    top: -10%;
+    left: -10%;
+  }
+}
+
+@keyframes vis {
+  0% {
+    top: 90%;
+    left: -110%;
+  }
+  50% {
+    top: -30%;
+    left: 10%;
+  }
+  100% {
+    top: -10%;
+    left: -10%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
